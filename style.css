@@ -37,6 +37,7 @@ li.menu a {
     border-bottom-style: solid;
     border-bottom-width: 0px;
     border-bottom-color: black;
+    word-wrap: break-word;
 }
 
 li.menu a:hover:not(.active) {
@@ -57,6 +58,7 @@ header {
     border-bottom-color: black;
     border-bottom-width: 1px;
     width: 100%;
+    align-content: center;
 }
 
 div.myheader {
