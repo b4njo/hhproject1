@@ -28,6 +28,10 @@ ul.menu {
     height:100%;
 }
 
+li.menu {
+    word-wrap: break-word;
+}
+
 li.menu a {
     display: block;
     height: 100%;
@@ -122,6 +126,7 @@ li.collapsing {
     border-bottom-style: solid;
     border-bottom-width: 0px;
     border-bottom-color: black;
+    word-wrap: break-word;
 }
 
 li.collapsing a {
@@ -133,6 +138,7 @@ li.collapsing a {
     border-bottom-style: solid;
     border-bottom-width: 0px;
     border-bottom-color: black;
+    word-wrap: break-word;
 }
 
 li.collapsing a:hover {
