@@ -5,7 +5,7 @@ html {
 nav {
     float: right;
     right: 0;
-    position: absolute;
+    /*position: absolute;*/
     font-size: 21px;
     padding: 0;
     height: 100%;
@@ -16,11 +16,42 @@ nav {
     border-width: 0px;
 }
 
+form {
+    font-size: 15px;
+}
 body {
     margin: 0;
     padding: 0;
 }
 
+h2 {
+    font-size: 20px;
+}
+
+img {
+    max-width: 10%;
+    max-height: 10%;
+}
+
+footer {
+    width: 100%;
+    height: 8%;
+    background-color: rgb(71, 71, 126);
+    position: fixed;
+    bottom: 0%;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px; 
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+}
 ul.menu {
     list-style-type: none;
     margin: 0;
@@ -67,6 +98,7 @@ header {
 
 div.myheader {
     font-size: 45px;
+    color: white;
     padding: 15px;
     text-align: center;
 }
@@ -81,6 +113,7 @@ article {
 section {
     width: 85%;
     float: left;
+    margin-bottom: 4%;
 }
 
 h1 {
@@ -104,6 +137,11 @@ li.collapsing:hover ul.collapsable {
     border-bottom-width: 0px;
     border-bottom-color: black;
     list-style-type: none;
+}
+
+::selection {
+    color:yellow;
+    background: yellowgreen;
 }
 
 li.collapsing {
@@ -143,7 +181,7 @@ li.collapsing a {
 
 li.collapsing a:hover {
     color: black;
-    background-color: white;
+    background-color: rgb(211, 211, 211);;
 }
 
 li.collapsing:hover {
@@ -151,10 +189,50 @@ li.collapsing:hover {
     color: white;
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    border-width: 2px;
+}
+th, td {
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 20%;
+}
+
+a.main {
+    text-decoration: none;
+    text-align: center;
+    margin: 30px;
+    width: 100%;
+}
+
+.anim {
+    animation-name: appear;
+    animation-duration: 3s;
+}
+
+@keyframes appear {
+    from {color: rgb(71, 71, 126)}
+    to {color: white}
+}
+
 @media screen and (max-width: 800px) {
     nav {
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
       height: 100%;
       position: static;
+    }
+
+    section {
+        margin-bottom: 11%;
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    
+    a.main {
+        margin-bottom: 0px;
     }
   }
