@@ -44,14 +44,15 @@ footer {
 
 footer p {
     color: white;
-    padding-top: 4px;
-    padding-bottom: 4px; 
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
 }
 
 footer p a {
     text-decoration: none;
     color: white;
 }
+
 ul.menu {
     list-style-type: none;
     margin: 0;
@@ -96,6 +97,10 @@ header {
     align-content: center;
 }
 
+.email {
+    width: 30%;
+}
+
 div.myheader {
     font-size: 45px;
     color: white;
@@ -111,9 +116,13 @@ article {
 }
 
 section {
-    width: 85%;
+    width: 75%;
     float: left;
-    margin-bottom: 4%;
+    padding: 2.5%;
+    font-size: 20px;
+    background-color: rgb(238, 235, 235);
+    margin: 2.5%;
+    margin-bottom: 6%;
 }
 
 h1 {
@@ -228,8 +237,8 @@ a.main {
     }
 
     section {
-        margin-bottom: 11%;
-        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+        margin-bottom: 13%;
+        width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
       }
     
     a.main {
