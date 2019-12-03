@@ -94,7 +94,14 @@ header {
     border-bottom-color: black;
     border-bottom-width: 1px;
     width: 100%;
-    align-content: center;
+    align-content: right;
+}
+
+header svg {
+    position: absolute;
+    right: 0;
+    width: 200px;
+    height: 17%;
 }
 
 .email {
@@ -105,7 +112,10 @@ div.myheader {
     font-size: 45px;
     color: white;
     padding: 15px;
+    width: 30%;
     text-align: center;
+    display: inline-block;
+    color: white;
 }
 
 article {
@@ -128,6 +138,10 @@ section {
 h1 {
     margin: 0;
     margin-bottom: 20px;
+}
+
+#hello {
+    font-size:50px;
 }
 
 ul.collapsable {
